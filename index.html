@@ -1,1 +1,57 @@
-<!doctype html><html><head><meta charset='utf-8'><title>TRAMPO B93 FINAL v2</title></head><body>TRAMPO deploy-ready v2</body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trampo B93</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Plataforma web de contratação de serviços" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Trampo B93</h1>
+      <nav>
+        <button id="btn-login">Entrar / Cadastrar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>Encontre e ofereça serviços com segurança</h2>
+      <p>Plataforma simples para anúncios e contratações.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <h3 id="services-title">Serviços disponíveis</h3>
+      <ul id="services-list" class="services-list">
+        <!-- Lista de serviços carregada dinamicamente -->
+      </ul>
+    </section>
+
+    <section id="auth" class="card" hidden>
+      <h3>Entrar / Cadastrar</h3>
+      <form id="auth-form">
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+        <label for="password">Senha</label>
+        <input id="password" type="password" required minlength="6" />
+        <div class="actions">
+          <button id="btn-signup" type="button">Cadastrar</button>
+          <button id="btn-signin" type="button">Entrar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Trampo B93</small>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
